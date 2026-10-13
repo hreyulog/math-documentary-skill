@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+vendor/
+output/
+build/
+delivery/
+.env
+.env.*
+*.log

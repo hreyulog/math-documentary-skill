@@ -1,0 +1,44 @@
+{
+  "schema": "portable-documentary-project-1",
+  "title": "数学人物：课本之外的一生",
+  "person": {"name": "人物中文名", "english_name": "Person Name"},
+  "output_dir": "output",
+  "voice": {"name": "zh-CN-YunxiNeural", "rate": "+0%", "pitch": "+0Hz", "volume": "+0%"},
+  "style": {"font": "auto", "english_font": "auto", "background": "#11191c", "accent": "#e5bd7f", "font_size": 52, "english_size": 34},
+  "assets": {
+    "portrait": {"type": "image", "path": "assets/portrait.jpg", "credit": "真实作者或档案机构", "license": "填写已核查许可", "page": "https://example.org/source", "caption_label": "人物肖像 · 约实际年份"},
+    "library": {"type": "video", "path": "assets/library.mp4", "credit": "真实作者", "license": "填写已核查许可", "page": "https://example.org/source", "caption_label": "当代图书馆 · 非历史地点"}
+  },
+  "editions": {
+    "short": {
+      "target_duration": 90,
+      "duration_range": [85, 100],
+      "min_tempo": 0.90,
+      "max_tempo": 1.10,
+      "before_pause": 0.18,
+      "after_pause": 0.32,
+      "scenes": [
+        {
+          "id": "intro",
+          "headline": "从一个问题\n认识一位数学家",
+          "cues": [{"text": "请填写经过核查的中文旁白。", "english": "Write a verified English translation.", "speak": "请填写经过核查的中文旁白。"}],
+          "shots": [
+            {"type": "image", "asset": "portrait", "weight": 1, "caption_label": "肖像史料 · 非动态视频"},
+            {"type": "video", "asset": "library", "weight": 2, "source_start": 1.0, "caption_label": "当代学习实景 · 非人物课堂"},
+            {"type": "card", "weight": 1, "title": "真实年份", "lines": ["简短事实", "简短问题"], "caption_label": "事实卡 · 非历史影像"},
+            {"type": "diagram", "weight": 1, "title": "两种状态之间", "diagram": {"kind": "transition", "states": ["A", "B"], "matrix": [[0.8, 0.2], [0.4, 0.6]]}, "caption_label": "原创数学示意动画"}
+          ]
+        }
+      ]
+    }
+  },
+  "_notes": [
+    "此文件是字段模板，示例素材路径与许可必须替换，不会被校验为已授权。",
+    "至少为90秒写足自然旁白；过短脚本不会被强行拉长，tempo默认0.90至1.10。duration_range显式允许85至100秒，超出应改稿。",
+    "shots使用duration精确秒数，或weight按scene余量分配；未指定duration默认weight=1，全部CFR24帧对齐。",
+    "已有音轨时edition添加voice_wav、subtitles(测量JSON路径)、所有scene.duration；音轨与场景必须对齐24fps。",
+    "字幕cue兼容text/english或zh/en；speak可将1821改为一八二一供TTS朗读，显示text保持数字。",
+    "可选full采用同一结构；可选music={asset:音频素材ID,volume:0.06,duck:0.5,loop:true}，需真实来源许可记录。",
+    "音视频来源的credit/license是用户声明，脚本不会把非空声明当作外部许可核实。"
+  ]
+}

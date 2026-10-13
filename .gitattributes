@@ -1,0 +1,3 @@
+# Root documentation uses LF; skill files retain published SHA256 bytes.
+* text=auto eol=lf
+st-petersburg-math-documentary/** -text
