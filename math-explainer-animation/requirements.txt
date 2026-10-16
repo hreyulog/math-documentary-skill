@@ -1,0 +1,4 @@
+# Media-analysis / contact-sheet helpers. Rendering uses Node dependencies
+# installed by init_project; no model service or media download is required here.
+numpy>=1.24,<3
+Pillow>=10,<13

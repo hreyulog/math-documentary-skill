@@ -1,0 +1,7 @@
+node_modules/
+build/
+output/
+qa/
+public/audio/*
+!public/audio/.gitkeep
+.env*

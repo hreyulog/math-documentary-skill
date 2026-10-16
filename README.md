@@ -1,8 +1,31 @@
 # math-documentary-skill
 
-用于制作数学人物纪录短片的 Codex skill：以人物生平与贡献为主线，输出真实、可播放的竖屏视频。
+从一个题目开始制作可播放数学视频的 Codex Skills，分别用于知识点动画与数学人物纪录片。
 
-当前 skill：[st-petersburg-math-documentary](st-petersburg-math-documentary/SKILL.md)。适用于圣彼得堡数学家及相近科学人物，默认中文男声、中文在上英文在下的双语字幕。
+| 要做的内容 | 使用的Skill | 默认首轮 |
+| --- | --- | --- |
+| 用图形变化讲清一个数学问题 | [math-explainer-animation](math-explainer-animation/SKILL.md) | 9:16、30fps、中文字幕、无旁白；10—15秒知识演示 |
+| 数学家的生平与贡献 | [st-petersburg-math-documentary](st-petersburg-math-documentary/SKILL.md) | 9:16、24fps、中文男声、中英字幕；约90秒人物试作 |
+
+当次用户要求优先。数学动画使用Remotion、React、TypeScript与SVG，让对象变化承担解释；人物版结合史料、照片、视频与图解。
+
+## 给一个题目，开始制作数学动画
+
+```text
+$math-explainer-animation
+题目：马尔可夫链究竟要记住多少过去？
+面向有高中数学基础的人，做中文竖屏数学动画。
+先调查资料，找一个有趣的具体例子，设计前五秒。
+写全片脚本与分镜，先交付15秒可播放样片，确认后继续。
+```
+
+流程：调查可靠资料→明确核心问题、定义和条件→选择直观例子与开头→统一数学计算→脚本分镜→SVG动画→指定音乐分析与少量音效→渲染→最终MP4验收→逐段接续。没有指定音乐时先做静音试片；已确认片段保留版本，每轮检查与前段连接。全片确认后再制作封面、发布文案和公众号提纲。
+
+新增Skill包含可运行Remotion起步工程、模板、音频分析、实际成片检查与手机视口浏览器检查。示例是自设明牌抽取，换题后须重新调查和设计，不把旧例子改标题当新片。详见 [数学动画安装与命令](math-explainer-animation/README.md)。把整个`math-explainer-animation`目录复制到个人Codex skills目录，安装后新开会话，或让助手直接读取其SKILL.md。
+
+自动解码、关键帧查看、短时浏览器播放、实际听审、实体手机和平台上传分别记录，不自动互相代替。公开仓库不含用户附件、私聊、第三方音视频或完整成片。
+
+以下为保留的人物纪录片Skill安装与说明。
 
 ## 安装
 

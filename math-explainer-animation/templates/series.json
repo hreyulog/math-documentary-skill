@@ -1,0 +1,16 @@
+{
+  "schema": "math-explainer-series/v1",
+  "accountName": "",
+  "watermark": false,
+  "language": "zh-CN",
+  "audience": "对数学感兴趣，具有高中数学基础",
+  "platforms": ["视频号", "公众号配套文章"],
+  "render": {"width": 1080, "height": 1920, "fps": 30, "aspectRatio": "9:16"},
+  "content": {"oneCoreQuestionPerEpisode": true, "plannedDurationSeconds": [90, 120], "firstSampleSeconds": [10, 15], "stopAfterSampleForConfirmation": true},
+  "narration": {"mode": "none", "latestUserRequestOverridesDefault": true},
+  "captions": {"maxLines": 2, "fontFamily": "Microsoft YaHei, Noto Sans CJK SC, sans-serif", "fontSize": 48, "checkEncodedPhoneSize": true},
+  "visual": {"svgPreferred": true, "background": "#081522", "text": "#F5F2E9", "accentPrimary": "#E6BC68", "accentSecondary": "#80C8E8", "edgePaddingPixels": 80, "platformUiSafeAreaRequiresInspection": true},
+  "audio": {"musicPath": null, "musicIdentityStatus": "unconfirmed", "musicUseScope": "", "fullTimelineSourceOffsetSeconds": 0, "silenceWhenNoApprovedMusic": true, "sparseActionEffects": true},
+  "production": {"engine": "Remotion + React + TypeScript", "frameDeterministic": true, "seed": null, "freezeApprovedSegmentsByHash": true, "uploadUserAssetsOnlyWhenAuthorized": true, "paidServicesOnlyWhenAuthorized": true},
+  "episodes": []
+}

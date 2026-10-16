@@ -1,0 +1,28 @@
+{
+  "name": "math-animation-preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Frame-driven SVG mathematics animation starter; first 15 seconds only",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "check": "tsc --noEmit && tsx scripts/check-math.ts",
+    "stills": "tsx scripts/render-preview.ts --stills-only",
+    "render:preview": "tsx scripts/render-preview.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "@remotion/bundler": "4.0.536",
+    "@remotion/renderer": "4.0.536",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.536"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.6",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  }
+}

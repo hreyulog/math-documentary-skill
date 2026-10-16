@@ -1,0 +1,15 @@
+node_modules/
+out/
+output/
+qa/
+.cache/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.m4a
+*.zip

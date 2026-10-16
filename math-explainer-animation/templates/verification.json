@@ -1,0 +1,42 @@
+{
+  "schema": "math-explainer-verification/v1",
+  "allowed_statuses": ["planned", "passed", "failed", "not_run", "not_applicable"],
+  "episode": "",
+  "version": "",
+  "verified_at": null,
+  "artifact": {
+    "relative_path": "",
+    "sha256": "",
+    "bytes": null,
+    "rendered_range_seconds": null,
+    "planned_full_duration_seconds": null,
+    "source_revision": ""
+  },
+  "scope": {
+    "first_round_only": true,
+    "user_approved_segments": [],
+    "unimplemented_segments": [],
+    "approved_segment_changes_explained": false
+  },
+  "checks": {
+    "math_and_conditions": {"status": "not_run", "command": "", "report": "", "notes": ""},
+    "timeline_and_reading": {"status": "not_run", "report": "", "notes": ""},
+    "deterministic_same_frame": {"status": "not_run", "frames": [], "report": ""},
+    "source_keyframes": {"status": "not_run", "frames_actually_viewed": [], "notes": ""},
+    "encoded_keyframes": {"status": "not_run", "frames_actually_viewed": [], "notes": ""},
+    "mobile_size_layout": {"status": "not_run", "viewport_pixels": null, "notes": ""},
+    "metadata": {"status": "not_run", "width": null, "height": null, "fps": null, "video_frames": null, "video_codec": "", "pixel_format": "", "audio_codec": "", "notes": ""},
+    "full_av_decode": {"status": "not_run", "command": "", "report": ""},
+    "browser_playback": {"status": "not_run", "browser": "", "played_ranges_seconds": [], "seek_times_seconds": [], "media_errors": [], "dropped_frames": null},
+    "adjacent_scene_join": {"status": "not_run", "global_times_seconds": [], "picture_notes": "", "music_offset_notes": ""},
+    "audio_numeric": {"status": "not_run", "integrated_lufs": null, "true_peak_dbfs": null, "clipped_samples": null, "alignment_notes": "", "report": ""},
+    "actual_listening": {"status": "not_run", "completed": false, "reviewer": null, "listened_ranges_seconds": [], "notes": "Numeric analysis does not establish listening quality."},
+    "physical_phone": {"status": "not_run", "completed": false, "device": null, "notes": "A phone-size browser viewport is not a physical-device test."},
+    "platform_upload": {"status": "not_run", "completed": false, "notes": "Only perform when authorized."},
+    "source_package": {"status": "not_run", "sha256": "", "license_and_private_data_review": "", "archive_integrity": ""}
+  },
+  "fixes": [],
+  "known_limitations": [],
+  "requires_user_confirmation": ["首段解释是否清楚", "节奏与视觉风格是否合适"],
+  "next_action": "交付首段后停止，等待用户确认。"
+}
