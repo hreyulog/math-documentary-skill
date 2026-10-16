@@ -1,4 +1,4 @@
 interface:
   display_name: "数学科普动画"
-  short_description: "给出题目，调研资料、核对数学、设计开头并制作可播放动画试片"
-  default_prompt: "用 $math-explainer-animation 制作一条中文数学科普动画。先检查当前项目，从我给的题目收敛一个核心问题，调查可靠资料并核对条件，写全片脚本和分镜，然后用 Remotion 与 SVG 渲染10至15秒竖屏首段。检查最终MP4与手机尺寸关键帧，交付可播放文件和源码后停下等我确认。"
+  short_description: "给出题目，调研核对，用严肃克制的SVG动画交付可播放试片"
+  default_prompt: "用 $math-explainer-animation 制作一条中文数学科普动画，整体严肃克制。先检查当前项目，从我给的题目收敛一个核心问题，调查可靠资料并核对条件，写全片脚本和分镜。按需参考Remotion官方指引、动画原理和过程动画方法，用 Remotion 与 SVG 渲染10至15秒竖屏首段。检查最终MP4与手机尺寸关键帧，交付可播放文件和源码后停下等我确认。"

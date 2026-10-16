@@ -4,6 +4,8 @@
 
 默认适配视频号与抖音：1080×1920、30fps、中文字幕、无旁白、无固定水印。可按当次要求切换横屏、时长或声音。可用于俄罗斯数学及其他数学思想；人物生平为主时使用同仓库的人物纪录片 Skill。
 
+默认视觉严肃、克制：数学对象和必要信息占主位，动作连续，关键处留阅读停顿。前五秒靠具体问题和可见变化吸引观众，不默认霓虹界面、弹跳、赌场气氛或装饰性特效。
+
 ## 调用
 
 ```text
@@ -15,6 +17,18 @@ $math-explainer-animation
 ```
 
 也可以只说“用数学动画 Skill，题目是……”，助手会先检查工作目录和已确认内容。不会把明牌示例改个标题就冒充新题成片。
+
+## 接入的外部方法
+
+本包提供 [按需读取和方法映射](references/upstream-methods.md)，以及 [已核对的上游版本记录](upstream-lock.json)：
+
+| 来源 | 在本流程中的用途 |
+| --- | --- |
+| [Remotion 官方 Skills](https://github.com/remotion-dev/skills) | 按当前工程版本查 API、逐帧动画、音频和编码方法 |
+| [animation-basics](https://github.com/abusuraihsakhri/agentic-video-skills/blob/master/motion-graphics-fundamentals/SKILL.md) | 让一次动作有清楚的起止，用缓动、分阶段和停顿安排注意力 |
+| [中文 remotion-video](https://github.com/wshuyi/remotion-video-skill) | 把计算拆成选择输入、执行一步、写入结果的过程，首次讲清后再简化重复 |
+
+这些是外部参考入口，不包含它们的源码，也不要求一次安装全部。已有本机安装时，助手从当前 Skills 清单选择实际路径；否则按链接读取相关部分。数学调研、条件核对和先样片后续作仍由本 Skill 管理。外部流程的 TTS、3D 或云服务不自动启用；本系列明确要求的 MP4 交付也不会被外部的默认预览偏好替代。授权和许可证状态见版本记录，不将未查明的许可写成已获授权。
 
 ## 安装
 
@@ -65,11 +79,12 @@ node "<SKILL_DIR>/scripts/browser_check.mjs" output/preview/math-preview-15s.mp4
 ## 内容与持续更新
 
 - `SKILL.md`：助手执行顺序和停点。
-- `references/`：调研、数学边界、前五秒、动画、声音、验收与掼蛋案例。
+- `references/`：调研、数学边界、前五秒、动画、声音、验收、掼蛋案例与外部方法映射。
 - `templates/`：选题、脚本、分镜、来源、系列状态和验证记录。
 - `assets/starter/`：可运行的Remotion与SVG示例。
 - `scripts/`：初始化、音频分析、实际MP4检查、浏览器检查与发布包校验。
 - `skill-package-manifest.json`：本包逐文件SHA256和大小。
+- `upstream-lock.json`：外部参考的已读取提交、入口、核对日期和许可状态；不是 Node 依赖锁文件，不触发自动安装或升级。
 
 本Skill提炼自已制作的竖屏数学动画：推牌、记录回看、不同历史汇合、概率分支和连续音轨。旧案例的通过记录不能用于新题；新片每轮重新核对最终文件。公开仓库没有用户私聊、个人附件、第三方音乐、原片或完整成片，实际素材在本地项目单独维护。
 

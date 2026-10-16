@@ -1,0 +1,55 @@
+{
+  "schema": "math-animation-upstream-references/v1",
+  "checkedAt": "2026-10-16T18:25:30Z",
+  "purpose": "Read-only reference snapshot; no vendored upstream code and no automatic install or upgrade.",
+  "sources": [
+    {
+      "repository": "https://github.com/remotion-dev/skills",
+      "branch": "main",
+      "commit": "1441a11e95db35443bd76bb318386c0d3ca00053",
+      "entryVersion": "4.0.536",
+      "readPaths": [
+        "README.md",
+        "skills/remotion-best-practices/SKILL.md",
+        "skills/remotion-markup/SKILL.md",
+        "skills/remotion-render/SKILL.md"
+      ],
+      "license": {
+        "githubSpdx": null,
+        "licenseFileFoundInRecursiveTree": false,
+        "status": "No repository license identified in the checked snapshot; reference links only. This does not describe the Remotion framework license."
+      },
+      "integration": "Technical guidance, task-specific routing and current documentation; user-required MP4 delivery takes precedence over preview-only defaults.",
+      "vendored": false
+    },
+    {
+      "repository": "https://github.com/abusuraihsakhri/agentic-video-skills",
+      "branch": "master",
+      "commit": "ae1847566d62c5f43ef50cbf34050f0eeaba31a7",
+      "entryName": "animation-basics",
+      "readPaths": ["motion-graphics-fundamentals/SKILL.md", "LICENSE"],
+      "license": {
+        "githubSpdx": "Apache-2.0",
+        "licenseFileFoundInRecursiveTree": true,
+        "status": "Apache License 2.0 text checked at LICENSE; no source copied into this package."
+      },
+      "integration": "Attention staging, easing and pauses; no squash, stretch or overshoot of quantitative encodings.",
+      "vendored": false
+    },
+    {
+      "repository": "https://github.com/wshuyi/remotion-video-skill",
+      "branch": "main",
+      "commit": "d16ebd9ca330d636cf82bfd33d48ae12df74fadd",
+      "entryName": "remotion-video",
+      "readPaths": ["SKILL.md", "README_CN.md"],
+      "license": {
+        "githubSpdx": null,
+        "readmeClaim": "MIT",
+        "licenseFileFoundInRecursiveTree": false,
+        "status": "Chinese README states MIT; no separate LICENSE found. Links and independently written method mapping only; no code or templates copied."
+      },
+      "integration": "Read process-animation sections as needed; no automatic TTS, 3D workflow, uploads or paid services.",
+      "vendored": false
+    }
+  ]
+}

@@ -9,6 +9,8 @@
 
 当次用户要求优先。数学动画使用Remotion、React、TypeScript与SVG，让对象变化承担解释；人物版结合史料、照片、视频与图解。
 
+数学动画当前默认采用严肃、克制的教学风格，以稳定构图、自然缓动和理解停顿组织画面。已接入[上游方法与版本记录](math-explainer-animation/references/upstream-methods.md)：Remotion官方技术指引、animation-basics动作原理、中文过程动画参考。它们按需读取，调研与数学核对仍由本Skill承担；外部技能源文件不在本仓库重新分发。
+
 ## 给一个题目，开始制作数学动画
 
 ```text

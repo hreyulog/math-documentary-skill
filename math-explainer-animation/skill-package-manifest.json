@@ -1,6 +1,6 @@
 {
   "name": "math-explainer-animation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "package_type": "workflow-skill",
   "contains_third_party_media": false,
   "contains_private_source_conversation": false,
@@ -14,8 +14,8 @@
     },
     {
       "path": "agents/openai.yaml",
-      "bytes": 535,
-      "sha256": "8fe38ca3517fa8fecc3401f94f2d00bbe2ddc9d5ff39e9be26ec9070719cc8e3"
+      "bytes": 612,
+      "sha256": "c4274d7fd1169ea6a26cb77b0f0838ea4c8d8d72fee7cae8e39d0ec9c29bff6b"
     },
     {
       "path": "assets/starter/.gitignore",
@@ -119,8 +119,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4403,
-      "sha256": "e0d3efdb5cd1bab2841513e87927f7111c1e796014abbbaa232f6c2d748fdc20"
+      "bytes": 6069,
+      "sha256": "8eb6e055cc61340910c352f568ad83a1314382356c07c93ea25e3da5c7b7a0e5"
     },
     {
       "path": "references/audio-and-qa.md",
@@ -134,13 +134,18 @@
     },
     {
       "path": "references/hook-and-animation.md",
-      "bytes": 3896,
-      "sha256": "13e9118171234bafe683e435476bd774054bf0842ab78167602860378cde85cc"
+      "bytes": 5521,
+      "sha256": "3989aedae437ef01eec4c57c839612303451ad9a5a786556d877de83d1b8343b"
     },
     {
       "path": "references/research-and-math.md",
       "bytes": 4879,
       "sha256": "4a3dea65699fabf923595f1a53f557533ff76b7920c90ef85f2e69227e0ee3e2"
+    },
+    {
+      "path": "references/upstream-methods.md",
+      "bytes": 6400,
+      "sha256": "68b68750b65b59cf7a707c79d8e34587472bf715faf14c5baf99a5bdd67a16ee"
     },
     {
       "path": "requirements.txt",
@@ -165,7 +170,7 @@
     {
       "path": "scripts/validate_package.py",
       "bytes": 3994,
-      "sha256": "83f6b04ff78bccb1d13e8c4302e612f6031a37485d1a8eb2dffba4dff5832482"
+      "sha256": "215215e25a50975570b866fd97bc7dff4ba4fe12297482e8cb5e381add9961fe"
     },
     {
       "path": "scripts/verify_video.py",
@@ -174,8 +179,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 8743,
-      "sha256": "3a8c9e712b8923a9745762ad013f0ad0bb812c749ee8740dd19831501112703c"
+      "bytes": 10133,
+      "sha256": "df3453f4edc90d6d3cbd961c59a6138f91883a7ae163e233a999534ba16dacfb"
     },
     {
       "path": "templates/brief.md",
@@ -189,8 +194,8 @@
     },
     {
       "path": "templates/series.json",
-      "bytes": 1328,
-      "sha256": "1728633f6cf68ac8d12d21312e5e9cc7f8aaa39a750820f7f8ea66b83d22b4f5"
+      "bytes": 1677,
+      "sha256": "2742bd7f1759a8d374d99b334c1a64c8a87a0fa2930c6380ce0a811a8ac20893"
     },
     {
       "path": "templates/sources.md",
@@ -211,6 +216,11 @@
       "path": "templates/verification.json",
       "bytes": 2547,
       "sha256": "b504e12e77333d940ecb617e39b5aa46dd4ed90ae6c9428cd8ec3639edc8c5af"
+    },
+    {
+      "path": "upstream-lock.json",
+      "bytes": 2393,
+      "sha256": "4d84cfe209abd50ecd6ccc5c08b0432dfe28c11b511b73b22e6230ce8130f259"
     }
   ]
 }

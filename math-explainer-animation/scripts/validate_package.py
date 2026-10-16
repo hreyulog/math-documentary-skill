@@ -56,7 +56,7 @@ def main():
             errors.append(f'Missing required file: {required}')
     if errors:
         raise SystemExit('\n'.join(errors))
-    inventory = {'name':'math-explainer-animation', 'version':'1.0.0', 'package_type':'workflow-skill',
+    inventory = {'name':'math-explainer-animation', 'version':'1.1.0', 'package_type':'workflow-skill',
                  'contains_third_party_media':False, 'contains_private_source_conversation':False,
                  'contains_vendor':False, 'contains_complete_video':False, 'files':files}
     if args.write_manifest:
